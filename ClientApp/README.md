@@ -8,6 +8,7 @@
 
 ### Details
 The Transcendental Agency ClientApp is a responsive application that allows Transcendental clients to view their current data from Google, Bigin, and ClickUp.
+unlicense
 
 ### Tools Used
 * React

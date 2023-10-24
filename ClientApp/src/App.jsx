@@ -1,23 +1,43 @@
-// src/App.js
+// import "./App.css";
+// import Header from "./components/header/Header";
+import Signin from "./components/Registration/Signin";
+import Signup from "./components/Registration/Signup";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import configureOAuth from "./oauthConfig"
-import Login from "./components/Login"
-import ProtectedRoute from "./components/ProtectedRoute"
-import Home from "./components/Home"
-
-configureOAuth()
+// import "./styles/main.scss";
+import Home from "./pages/Home.jsx";
+import Dashboard from "./pages/Dashboard";
+import RequireAuth from "./utils/RequireAuth";
+import { useSelector } from "react-redux";
 
 function App() {
+  const { auth } = useSelector((state) => ({ ...state }));
   return (
-    <Router>
-      <Switch>
-        <Route path="/login" component={Login} />
-        <ProtectedRoute path="/home" component={Home} />
-        {/* Add more routes as needed */}
-      </Switch>
-    </Router>
-  )
+    <div>
+      <Router>
+        {/* <Header /> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/signin"
+            element={!auth.currentUser ? <Signin /> : <Dashboard />}
+          />
+          <Route
+            path="/signup"
+            element={!auth.currentUser ? <Signup /> : <Dashboard />}
+          />
+          <Route
+            path="/dashboard"
+            element={
+              <RequireAuth>
+                <Dashboard />
+              </RequireAuth>
+            }
+          />
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;

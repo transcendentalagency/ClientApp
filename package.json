@@ -1,0 +1,17 @@
+{
+  "name": "clientapp",
+  "version": "1.0.0",
+  "description": "### Details The Transcendental Agency ClientApp is a responsive application that allows Transcendental clients to view their current data.",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd clientapp && npm run dev",
+    "server": "cd server && npm run start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Paul Vera @ Transcendental Agency, LLC",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

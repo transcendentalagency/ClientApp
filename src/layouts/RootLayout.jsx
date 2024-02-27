@@ -29,7 +29,7 @@ const RootLayout = () => {
   };
 
   return (
-    <>
+    <div className="text-black dark:bg-black dark:text-white">
       {/* Temp button: Place in Navigation Component */}
       <button
         onClick={handleThemeSwitch}
@@ -39,12 +39,12 @@ const RootLayout = () => {
       <ScrollRestoration />
       {isLoading && <div className="loading-spinner" />}
       <div
-        className={`container bg-white text-black dark:bg-black dark:text-white ${
+        className={`container bg-white text-black dark:bg-black dark:text-white w-screen ${
           isLoading ? "loading" : ""
         }`}>
         <Outlet />
       </div>
-    </>
+    </div>
   );
 };
 

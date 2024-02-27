@@ -3,15 +3,13 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light dark;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .container {
-  background-color: black;
+  background-color: white;
 }
 .container.loading {
   filter: blur(5px);

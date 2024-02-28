@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light dark;
+  --white-bg: #f7f8f3;
+  --orange-bg: #d7a840;
+  --green-bg: #58bcbd;
+  --teal-bg: #23d8b2;
+  --l-blue-bg: #4297b9;
+  --blue-bg: #3076a6;
+  --d-blue-bg: #173861;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -11,7 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .container {
-  background-color: black;
+  background-color: var(--white-bg);
 }
 .container.loading {
   filter: blur(5px);

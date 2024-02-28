@@ -10,6 +10,7 @@
   --l-blue-bg: #4297b9;
   --blue-bg: #3076a6;
   --d-blue-bg: #173861;
+  --dd-blue-bg: #0f243e;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -54,6 +55,10 @@
   border-top-color: hsl(200, 100%, 50%);
   animation: spin infinite 2s ease-in-out;
   mix-blend-mode: multiply;
+}
+
+.table-row {
+  border-radius: 20px;
 }
 
 @keyframes spin {

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Outlet, useNavigation } from "react-router";
 import { ScrollRestoration } from "react-router-dom";
+import Topnav from "../components/Topnav";
 
 const RootLayout = () => {
   const { state } = useNavigation();
@@ -29,19 +30,15 @@ const RootLayout = () => {
   };
 
   return (
-    <div className="text-black dark:bg-black dark:text-white">
+    <div className="text-black bg-[--white-bg] dark:bg-[--dd-blue-bg] dark:text-white">
       {/* Temp button: Place in Navigation Component */}
-      <button
-        onClick={handleThemeSwitch}
-        className="btn rounded-xl bg-green-600 py-2 px-3">
-        Dark Mode
-      </button>
       <ScrollRestoration />
       {isLoading && <div className="loading-spinner" />}
       <div
-        className={`container bg-white text-black dark:bg-black dark:text-white w-screen ${
+        className={`container bg-[--white-bg] text-black dark:bg-[--dd-blue-bg] dark:text-white w-screen m-auto ${
           isLoading ? "loading" : ""
         }`}>
+        <Topnav handleThemeSwitch={handleThemeSwitch} />
         <Outlet />
       </div>
     </div>

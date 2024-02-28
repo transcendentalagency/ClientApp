@@ -1,10 +1,14 @@
+import MonthlyPerformance from "../components/MonthlyPerformance";
 import Summary from "../components/Summary";
 
+// eslint-disable-next-line react/prop-types
 const Dashboard = () => {
   return (
-    <div className=" m-auto">
+    <div className="m-auto snap-y">
       <Summary />
-      <div className="my-8 h-[1px] bg-black dark:bg-blue-900 w-screen"></div>
+      <div className="my-8 h-[1px] bg-[--d-blue-bg] dark:bg-[--teal-bg] w-screen"></div>
+      <MonthlyPerformance />
+      <div className="my-8 h-[1px] bg-[--d-blue-bg] dark:bg-[--teal-bg] w-screen"></div>
     </div>
   );
 };

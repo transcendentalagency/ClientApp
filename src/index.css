@@ -12,6 +12,14 @@
   --d-blue-bg: #173861;
   --dd-blue-bg: #0f243e;
 
+  --chart-orange-bg: #d9be84;
+  --chart-green-bg: #7cbcbd;
+  --chart-teal-bg: #71dcc5;
+  --chart-l-blue-bg: #6ea6bb;
+  --chart-blue-bg: #5b8aa9;
+  --chart-d-blue-bg: #435f81;
+  --chart-dd-blue-bg: #3d597b;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

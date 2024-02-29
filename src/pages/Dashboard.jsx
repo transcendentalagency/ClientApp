@@ -1,4 +1,5 @@
 import MonthlyPerformance from "../components/MonthlyPerformance";
+import OnlineConversions from "../components/OnlineConversions";
 import PhoneConversions from "../components/PhoneConversions";
 import Summary from "../components/Summary";
 
@@ -11,6 +12,8 @@ const Dashboard = () => {
       <MonthlyPerformance />
       <div className="my-8 h-[1px] bg-[--d-blue-bg] dark:bg-[--teal-bg] w-screen"></div>
       <PhoneConversions />
+      <div className="my-8 h-[1px] bg-[--d-blue-bg] dark:bg-[--teal-bg] w-screen"></div>
+      <OnlineConversions />
       <div className="my-8 h-[1px] bg-[--d-blue-bg] dark:bg-[--teal-bg] w-screen"></div>
     </div>
   );

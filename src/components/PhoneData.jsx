@@ -25,7 +25,7 @@ const PhoneData = () => {
               <p className="text-xl text-white">Total Calls</p>
               <span className="text-[3rem] md:text-[5rem] font-light">76</span>
             </Card>
-            <Card color="flex flex-col gap-2 mb-4 p-4 dark:bg-slate-400">
+            <Card color="flex flex-col gap-2 mb-4 p-4 dark:bg-slate-400  bg-white">
               <LineChart
                 xAxis={[{ data: [0, 2, 4, 6, 8, 10] }]}
                 series={[
@@ -75,7 +75,7 @@ const PhoneData = () => {
               <p className="text-xl text-white">Unique Callers</p>
               <span className="text-[3rem] md:text-[5rem] font-light">76</span>
             </Card>
-            <Card color="flex flex-col gap-2 mb-4 p-4 dark:bg-slate-400">
+            <Card color="flex flex-col gap-2 mb-4 p-4 dark:bg-slate-400 bg-white">
               <LineChart
                 xAxis={[{ data: [0, 2, 4, 6, 8, 10] }]}
                 series={[

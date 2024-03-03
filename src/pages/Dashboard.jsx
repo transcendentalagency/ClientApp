@@ -10,7 +10,7 @@ import Website from "../components/Website";
 // eslint-disable-next-line react/prop-types
 const Dashboard = () => {
   const lineBreak = (
-    <div className="my-8 h-[1px] bg-[--d-blue-bg] dark:bg-[--teal-bg] w-screen"></div>
+    <div className="my-8 h-[1px] bg-[--d-blue-bg] dark:bg-[--teal-bg] w-full"></div>
   );
 
   return (

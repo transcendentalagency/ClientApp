@@ -85,7 +85,7 @@ const Website = () => {
       </SectionTitle>
 
       <SectionContainer>
-        <div className="flex flex-col xl:flex-row gap-0 !w-full lg:!w-7/12 xl:!w-6/12 m-auto">
+        <div className="flex flex-col xl:flex-row gap-0 !w-full max-w-[750px] m-auto">
           <div>
             <Card color="bg-[--green-bg] mb-4 xl:rounded-l-lg xl:rounded-r-none xl:mr-[-5px] w-12/12 m-auto h-auto">
               <p className="text-xl text-[--d-blue-bg]">
@@ -100,7 +100,7 @@ const Website = () => {
               <span className="text-[3rem] md:text-[5rem] font-light">3</span>
             </Card>
           </div>
-          <Card color="flex flex-col gap-2 p-4 dark:bg-slate-400 bg-white">
+          <Card color="flex flex-col gap-2 p-4 dark:bg-slate-400 bg-white overflow-x-scroll md:overflow-hidden">
             <span className="text-[1.5rem] font-regular text-[--blue-bg] dark:text-[--d-blue-bg]">
               Organic Sessions
             </span>
@@ -114,8 +114,8 @@ const Website = () => {
         </div>
       </SectionContainer>
 
-      <SectionContainer>
-        <LeftSection color="bg-transparent dark:bg-transparent shadow-none p-0 w-12/12 lg:w-6/12">
+      <SectionContainer color="!p-0">
+        <LeftSection color="!bg-transparent dark:bg-transparent shadow-none p-0 w-12/12 lg:w-6/12">
           <div className="flex flex-col xl:flex-row gap-0">
             <Card color="bg-[--l-blue-bg] mb-4 xl:rounded-l-lg xl:rounded-r-none xl:mr-[-10px] h-1/2">
               <p className="text-xl text-white">Sessions</p>
@@ -148,7 +148,7 @@ const Website = () => {
             </Card>
           </div>
         </LeftSection>
-        <LeftSection color="bg-transparent dark:bg-transparent shadow-none p-0 w-12/12 lg:w-6/12">
+        <LeftSection color="!bg-transparent dark:bg-transparent shadow-none p-0 w-12/12 lg:w-6/12">
           <div className="flex flex-col xl:flex-row gap-0">
             <Card color="bg-[--l-blue-bg] mb-4 xl:rounded-l-lg xl:rounded-r-none xl:mr-[-10px] h-1/2">
               <p className="text-xl text-white">New User Sessions</p>

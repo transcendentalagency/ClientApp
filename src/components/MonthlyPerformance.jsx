@@ -8,12 +8,12 @@ const MonthlyPerformance = () => {
       <SectionTitle>MONTHLY PERFORMANCE</SectionTitle>
 
       <SectionContainer>
-        <LeftSection color="w-full overflow-scroll">
+        <LeftSection color="w-full overflow-x-scroll xl:overflow-hidden touch-pan-x snap-x">
           <span className="text-[1.5rem] font-regular text-[--blue-bg] dark:text-[--d-blue-bg]">
             Performance by Channel
           </span>
 
-          <div className="flex flex-col w-full gap-4 text-white mt-4 flex-nowrap overflow-scroll min-w-[1000px] touch-pan-x  snap-x">
+          <div className="flex flex-col w-full gap-4 text-white mt-4 flex-nowrap min-w-[1000px]">
             <ul className="bg-[--green-bg] dark:!bg-[--green-bg] rounded-xl px-2 py-4 flex flex-row text-center align-top gap-2 justify-between dark:bg-slate-400 shadow-md shadow-slate-400">
               <li className="w-[10%] text-left">Channel</li>
               <li className="w-[10%]">New Site Users</li>

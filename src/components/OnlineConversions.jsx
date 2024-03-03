@@ -35,7 +35,7 @@ const OnlineConversions = () => {
               <PieChart
                 id="pieChart"
                 colors={[
-                  "#d7a840",
+                  "#6ea6bb",
                   "#58bcbd",
                   "#23d8b2",
                   "#4297b9",
@@ -49,7 +49,7 @@ const OnlineConversions = () => {
                       {
                         id: 0,
                         value: `${mockData[0]}`,
-                        color: "#d7a840",
+                        color: "#6ea6bb",
                         label: "Direct",
                       },
                       {
@@ -107,7 +107,7 @@ const OnlineConversions = () => {
                 <div className="flex flex-col text-[--d-blue-bg] px-4 pb-2 w-full">
                   <div className="grid grid-flow-row grid-cols-1 grid-rows-1 gap-1 my-2">
                     <div
-                      className={`flex flex-row justify-between rounded-md bg-[#f3dca9] px-2`}>
+                      className={`flex flex-row justify-between rounded-md bg-[#6ea6bb] px-2`}>
                       <p>Direct</p>
                       <input
                         type="text"

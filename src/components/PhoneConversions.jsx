@@ -24,14 +24,14 @@ const PhoneConversions = () => {
               Call Volume By Source
             </span>
             <PieChart
-              colors={["#d7a840", "#58bcbd", "#4297b9", "#173861", "#3076a6"]}
+              colors={["#6ea6bb", "#58bcbd", "#4297b9", "#173861", "#3076a6"]}
               series={[
                 {
                   data: [
                     {
                       id: 0,
                       value: `${mockData[0]}`,
-                      color: "#d7a840",
+                      color: "#6ea6bb",
                       label: "Google Ads",
                     },
                     {
@@ -44,7 +44,7 @@ const PhoneConversions = () => {
                       id: 2,
                       value: `${mockData[2]}`,
                       color: "#4297b9",
-                      label: "Direc",
+                      label: "Direct",
                     },
                     {
                       id: 3,
@@ -75,7 +75,7 @@ const PhoneConversions = () => {
             <div className="flex flex-col text-[--d-blue-bg] px-4 pb-2 w-full">
               <div className="grid grid-flow-row grid-cols-1 grid-rows-1 gap-1 my-2">
                 <div
-                  className={`flex flex-row justify-between rounded-md bg-[#f0c76f] px-2`}>
+                  className={`flex flex-row justify-between rounded-md bg-[#6ea6bb] px-2`}>
                   <p>Google Ads</p>
                   <p>53</p>
                 </div>
@@ -108,14 +108,14 @@ const PhoneConversions = () => {
             </span>
 
             <PieChart
-              colors={["#d7a840", "#58bcbd", "#4297b9", "#173861", "#3076a6"]}
+              colors={["#6ea6bb", "#58bcbd", "#4297b9", "#173861", "#3076a6"]}
               series={[
                 {
                   data: [
                     {
                       id: 0,
                       value: `${mockData[0]}`,
-                      color: "#d7a840",
+                      color: "#6ea6bb",
                       label: "Google Ads",
                     },
                     {
@@ -124,7 +124,7 @@ const PhoneConversions = () => {
                       color: "#58bcbd",
                       label: "Google Organic",
                     },
-                    { id: 2, value: 3, color: "#4297b9", label: "Direc" },
+                    { id: 2, value: 3, color: "#4297b9", label: "Direct" },
                     {
                       id: 3,
                       value: `${mockData[2]}`,
@@ -154,7 +154,7 @@ const PhoneConversions = () => {
             <div className="flex flex-col text-[--d-blue-bg] px-4 pb-2 w-full">
               <div className="grid grid-flow-row grid-cols-1 grid-rows-1 gap-1 my-2">
                 <div
-                  className={`flex flex-row justify-between rounded-md bg-[#f0c76f] px-2`}>
+                  className={`flex flex-row justify-between rounded-md bg-[#6ea6bb] px-2`}>
                   <p>Google Ads</p>
                   <p>53</p>
                 </div>

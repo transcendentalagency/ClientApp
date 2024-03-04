@@ -16,7 +16,7 @@ const OnlineConversions = () => {
   };
 
   return (
-    <>
+    <div id="online-conversions">
       <SectionTitle>
         ONLINE CONVERSIONS
         <br />
@@ -27,7 +27,7 @@ const OnlineConversions = () => {
 
       <SectionContainer>
         <div className="flex flex-col lg:flex-row gap-4 bg-transparent">
-          <Card color="dark:bg-slate-400 py-4">
+          <Card color="dark:bg-slate-400 py-4 bg-white">
             <span className="text-[--d-blue-bg] px-6 text-[1.5rem]">
               Sessions
             </span>
@@ -211,7 +211,7 @@ const OnlineConversions = () => {
           </Card>
         </div>
       </SectionContainer>
-    </>
+    </div>
   );
 };
 

@@ -13,7 +13,9 @@ const Topnav = ({ handleThemeSwitch }) => {
     <div className="flex flex-row gap-2 justify-between align-middle py-2 px-4 mb-8">
       <div className="flex flex-row align-middle gap-2 justify-center">
         {/* TODO: this needs to be a functional sidebar */}
-        <PiSidebarLight className="text-[2rem] text-[--d-blue-bg] m-auto dark:text-white cursor-pointer" />
+        <PiSidebarLight
+          className="text-[2rem] text-[--d-blue-bg] m-auto dark:text-white cursor-pointer"
+        />
         <span className=" text-[--d-blue-bg] dark:text-white text-[2rem] font-regular">
           Azalea
         </span>

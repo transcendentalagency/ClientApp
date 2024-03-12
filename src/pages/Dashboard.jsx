@@ -14,7 +14,7 @@ const Dashboard = () => {
   );
 
   return (
-    <div className="m-auto snap-y">
+    <div className="m-auto snap-y bg-[--white-bg] dark:bg-[--dd-blue-bg]">
       <Summary />
       {lineBreak}
       <MonthlyPerformance />

@@ -31,7 +31,7 @@ const DigitalAds = () => {
           Performance By Campaign
         </span>
       </SectionTitle>
-      <SectionContainer color="grid grid-cols-1">
+      <SectionContainer color="grid grid-cols-1 pb-10">
         <div className="flex flex-col lg:flex-row bg-transparent lg:m-auto max-w-[750px]">
           <Card color="dark:bg-slate-400 p-4 bg-white">
             <span className="text-[--d-blue-bg] px-6 text-[1.5rem]">

@@ -30,12 +30,11 @@ const RootLayout = () => {
   };
 
   return (
-    <div className="text-black bg-[--white-bg] dark:bg-[--dd-blue-bg] dark:text-white overflow-x-hidden">
-      {/* Temp button: Place in Navigation Component */}
+    <div className="text-black bg-[--white-bg] dark:bg-[--dd-blue-bg] dark:text-white">
       <ScrollRestoration />
       {isLoading && <div className="loading-spinner" />}
       <div
-        className={`container bg-[--white-bg] text-black dark:bg-[--dd-blue-bg] dark:text-white w-screen m-auto ${
+        className={`container bg-[--white-bg] text-black dark:bg-[--dd-blue-bg] dark:text-white w-full m-auto ${
           isLoading ? "loading" : ""
         }`}>
         <Topnav handleThemeSwitch={handleThemeSwitch} />

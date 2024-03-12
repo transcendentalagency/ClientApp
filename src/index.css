@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.sidebar-open {
+  padding-left: 14em;
+}
 :root {
   --white-bg: #f7f8f3;
   --orange-bg: #d7a840;
@@ -27,6 +30,8 @@
 }
 .container {
   background-color: var(--white-bg);
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
 }
 .container.loading {
   filter: blur(5px);
@@ -98,4 +103,8 @@
   to {
     rotate: 360deg;
   }
+}
+
+#sidebar {
+  z-index: 9999;
 }

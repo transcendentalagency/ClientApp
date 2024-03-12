@@ -8,7 +8,7 @@ const PhoneConversions = () => {
   const patientMockData = 16;
 
   return (
-    <>
+    <div id="phone-conversions">
       <SectionTitle>
         PHONE CONVERSIONS
         <br />
@@ -19,7 +19,7 @@ const PhoneConversions = () => {
 
       <SectionContainer>
         <div className="flex flex-col lg:flex-row gap-4 bg-transparent">
-          <Card color="dark:bg-slate-400">
+          <Card color="dark:bg-slate-400 bg-white">
             <span className="text-[--d-blue-bg] px-6">
               Call Volume By Source
             </span>
@@ -102,7 +102,7 @@ const PhoneConversions = () => {
               </div>
             </div>
           </Card>
-          <Card color="dark:bg-slate-400">
+          <Card color="dark:bg-slate-400 bg-white">
             <span className="text-[--d-blue-bg] px-6">
               Call Volume By Source
             </span>
@@ -194,7 +194,7 @@ const PhoneConversions = () => {
           </Card>
         </div>
       </SectionContainer>
-    </>
+    </div>
   );
 };
 

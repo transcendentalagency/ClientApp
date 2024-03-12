@@ -10,7 +10,7 @@ const PhoneData = () => {
   const opsMockData = 16;
 
   return (
-    <>
+    <div id="phone-data">
       <SectionTitle>
         PHONE DATA
         <br />
@@ -103,7 +103,7 @@ const PhoneData = () => {
           </div>
         </LeftSection>
       </SectionContainer>
-    </>
+    </div>
   );
 };
 

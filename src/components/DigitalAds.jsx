@@ -23,7 +23,7 @@ const DigitalAds = () => {
   };
 
   return (
-    <>
+    <div id="digital-ads">
       <SectionTitle>
         DIGITAL ADS
         <br />
@@ -31,9 +31,9 @@ const DigitalAds = () => {
           Performance By Campaign
         </span>
       </SectionTitle>
-      <SectionContainer color="grid grid-cols-1">
+      <SectionContainer color="grid grid-cols-1 pb-10">
         <div className="flex flex-col lg:flex-row bg-transparent lg:m-auto max-w-[750px]">
-          <Card color="dark:bg-slate-400 p-4">
+          <Card color="dark:bg-slate-400 p-4 bg-white">
             <span className="text-[--d-blue-bg] px-6 text-[1.5rem]">
               Traffic By Campaign
             </span>
@@ -96,7 +96,7 @@ const DigitalAds = () => {
                   <div className="grid grid-flow-row grid-cols-1 grid-rows-1 gap-1 my-2">
                     <div
                       className={`flex flex-row justify-between rounded-md bg-[#6ea6bb] px-2`}>
-                      <p>Direct</p>
+                      <p>Search - General Dentistry</p>
                       <input
                         type="text"
                         name="d1"
@@ -154,7 +154,7 @@ const DigitalAds = () => {
 
         {/* Cost By Campaign Card */}
         <div className="flex flex-col lg:flex-row bg-transparent gap-4">
-          <Card color="dark:bg-slate-400 px-4">
+          <Card color="dark:bg-slate-400 px-4 bg-white">
             <span className="text-[--d-blue-bg] px-6 text-[1.5rem]">
               Cost By Campaign
             </span>
@@ -220,7 +220,7 @@ const DigitalAds = () => {
               </div>
             </div>
           </Card>
-          <Card color="dark:bg-slate-400 py-4">
+          <Card color="dark:bg-slate-400 py-4 bg-white">
             <span className="text-[--d-blue-bg] px-6 text-[1.5rem]">
               Cost Per Conversion (CPC)
             </span>
@@ -229,7 +229,7 @@ const DigitalAds = () => {
                 <span>Campaign</span>
                 <span>Cost/Conversions</span>
               </div>
-              <div className="flex flex-col text-[--blue-bg] px-4 pb-2 w-full">
+              <div className="flex flex-col text-[--d-blue-bg] px-4 pb-2 w-full">
                 <div className="grid grid-flow-row grid-cols-1 grid-rows-1 gap-1 my-2">
                   <div
                     className={`flex flex-row justify-between rounded-md bg-[#6ea6bb] px-2`}>
@@ -288,7 +288,7 @@ const DigitalAds = () => {
           </Card>
         </div>
       </SectionContainer>
-    </>
+    </div>
   );
 };
 

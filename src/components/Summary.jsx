@@ -6,7 +6,7 @@ import SectionTitle from "./SectionTitle";
 
 const Summary = () => {
   return (
-    <>
+    <div id="summary">
       <SectionTitle>EXECUTIVE SUMMARY</SectionTitle>
 
       <SectionContainer>
@@ -46,7 +46,7 @@ const Summary = () => {
           </Card>
         </RightSection>
       </SectionContainer>
-    </>
+    </div>
   );
 };
 

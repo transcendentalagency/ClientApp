@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 
 const MonthlyPerformance = () => {
   return (
-    <>
+    <div id="performance">
       <SectionTitle>MONTHLY PERFORMANCE</SectionTitle>
 
       <SectionContainer>
@@ -65,7 +65,7 @@ const MonthlyPerformance = () => {
           </div>
         </LeftSection>
       </SectionContainer>
-    </>
+    </div>
   );
 };
 

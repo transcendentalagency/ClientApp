@@ -75,7 +75,7 @@ const Website = () => {
   const valueFormatter = (value) => `${value} users`;
 
   return (
-    <>
+    <div id="website">
       <SectionTitle>
         WEBSITE
         <br />
@@ -115,7 +115,7 @@ const Website = () => {
       </SectionContainer>
 
       <SectionContainer color="!p-0">
-        <LeftSection color="!bg-transparent dark:bg-transparent shadow-none p-0 w-12/12 lg:w-6/12">
+        <LeftSection color="!bg-transparent dark:bg-transparent shadow-none !py-0 w-12/12 lg:w-6/12">
           <div className="flex flex-col xl:flex-row gap-0">
             <Card color="bg-[--l-blue-bg] mb-4 xl:rounded-l-lg xl:rounded-r-none xl:mr-[-10px] h-1/2">
               <p className="text-xl text-white">Sessions</p>
@@ -148,7 +148,7 @@ const Website = () => {
             </Card>
           </div>
         </LeftSection>
-        <LeftSection color="!bg-transparent dark:bg-transparent shadow-none p-0 w-12/12 lg:w-6/12">
+        <LeftSection color="!bg-transparent dark:bg-transparent shadow-none !py-0 w-12/12 lg:w-6/12">
           <div className="flex flex-col xl:flex-row gap-0">
             <Card color="bg-[--l-blue-bg] mb-4 xl:rounded-l-lg xl:rounded-r-none xl:mr-[-10px] h-1/2">
               <p className="text-xl text-white">New User Sessions</p>
@@ -182,7 +182,7 @@ const Website = () => {
           </div>
         </LeftSection>
       </SectionContainer>
-    </>
+    </div>
   );
 };
 

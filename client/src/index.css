@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar-open {
+  padding-left: 14em;
+}
+:root {
+  --white-bg: #f7f8f3;
+  --orange-bg: #d7a840;
+  --green-bg: #58bcbd;
+  --teal-bg: #23d8b2;
+  --l-blue-bg: #4297b9;
+  --blue-bg: #3076a6;
+  --d-blue-bg: #173861;
+  --dd-blue-bg: #0f243e;
+
+  --chart-orange-bg: #d9be84;
+  --chart-green-bg: #7cbcbd;
+  --chart-teal-bg: #71dcc5;
+  --chart-l-blue-bg: #6ea6bb;
+  --chart-blue-bg: #5b8aa9;
+  --chart-d-blue-bg: #435f81;
+  --chart-dd-blue-bg: #3d597b;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  background-color: var(--white-bg);
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+.container.loading {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: var(--dd-blue-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue-bg);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--d-blue-bg);
+}
+
+.loading-spinner::after {
+  content: "";
+  z-index: 999;
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  border: 20px solid transparent;
+  border-bottom-color: hsl(200, 100%, 50%);
+  animation: spin infinite 1.25s ease-in;
+  mix-blend-mode: multiply;
+}
+
+.loading-spinner::before {
+  content: "";
+  z-index: 999;
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  border: 20px solid transparent;
+  border-top-color: hsl(200, 100%, 50%);
+  animation: spin infinite 2s ease-in-out;
+  mix-blend-mode: multiply;
+}
+
+.table-row {
+  border-radius: 20px;
+}
+
+@keyframes spin {
+  to {
+    rotate: 360deg;
+  }
+}
+
+#sidebar {
+  z-index: 9999;
+}

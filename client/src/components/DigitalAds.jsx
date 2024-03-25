@@ -54,25 +54,25 @@ const DigitalAds = () => {
                     data: [
                       {
                         id: 0,
-                        value: `${mockData[0]}`,
+                        value: mockData[0],
                         color: "#6ea6bb",
                         label: "Search - General Dentistry",
                       },
                       {
                         id: 1,
-                        value: `${mockData[1]}`,
+                        value: mockData[1],
                         color: "#58bcbd",
                         label: "Paid Search",
                       },
                       {
                         id: 2,
-                        value: `${mockData[2]}`,
+                        value: mockData[2],
                         color: "#23d8b2",
                         label: "Organic Search",
                       },
                       {
                         id: 3,
-                        value: `${mockData[3]}`,
+                        value: mockData[3],
                         color: "#4297b9",
                         label: "Referral",
                       },
@@ -101,7 +101,7 @@ const DigitalAds = () => {
                         type="text"
                         name="d1"
                         id="d1"
-                        value={`${mockData[0]}`}
+                        defaultValue={`${mockData[0]}`}
                         className="text-end bg-transparent border-none"
                         readOnly
                       />
@@ -113,7 +113,7 @@ const DigitalAds = () => {
                         type="text"
                         name="d2"
                         id="d2"
-                        value={`${mockData[1]}`}
+                        defaultValue={`${mockData[1]}`}
                         className="text-end bg-transparent border-none"
                         readOnly
                       />
@@ -125,7 +125,7 @@ const DigitalAds = () => {
                         type="text"
                         name="d3"
                         id="d3"
-                        value={`${mockData[2]}`}
+                        defaultValue={`${mockData[2]}`}
                         className="text-end bg-transparent border-none"
                       />
                     </div>
@@ -136,7 +136,7 @@ const DigitalAds = () => {
                         type="text"
                         name="d4"
                         id="d4"
-                        value={`${mockData[3]}`}
+                        defaultValue={`${mockData[3]}`}
                         className="text-end bg-transparent border-none"
                         readOnly
                       />
@@ -172,7 +172,7 @@ const DigitalAds = () => {
                       type="text"
                       name="d1"
                       id="d1"
-                      value={`$${conversionMockData[0]}`}
+                      defaultValue={`$${conversionMockData[0]}`}
                       className="text-end bg-transparent border-none"
                       readOnly
                     />
@@ -184,7 +184,7 @@ const DigitalAds = () => {
                       type="text"
                       name="d2"
                       id="d2"
-                      value={`$${conversionMockData[1]}`}
+                      defaultValue={`$${conversionMockData[1]}`}
                       className="text-end bg-transparent border-none"
                       readOnly
                     />
@@ -196,7 +196,7 @@ const DigitalAds = () => {
                       type="text"
                       name="d3"
                       id="d3"
-                      value={`$${conversionMockData[2]}`}
+                      defaultValue={`$${conversionMockData[2]}`}
                       className="text-end bg-transparent border-none"
                     />
                   </div>
@@ -207,7 +207,7 @@ const DigitalAds = () => {
                       type="text"
                       name="d4"
                       id="d4"
-                      value={`$${conversionMockData[3]}`}
+                      defaultValue={`$${conversionMockData[3]}`}
                       className="text-end bg-transparent border-none"
                       readOnly
                     />
@@ -238,7 +238,7 @@ const DigitalAds = () => {
                       type="text"
                       name="d1"
                       id="d1"
-                      value={`$${conversionMockData[0]}`}
+                      defaultValue={`$${conversionMockData[0]}`}
                       className="text-end bg-transparent border-none"
                       readOnly
                     />
@@ -250,7 +250,7 @@ const DigitalAds = () => {
                       type="text"
                       name="d2"
                       id="d2"
-                      value={`$${conversionMockData[1]}`}
+                      defaultValue={`$${conversionMockData[1]}`}
                       className="text-end bg-transparent border-none"
                       readOnly
                     />
@@ -262,7 +262,7 @@ const DigitalAds = () => {
                       type="text"
                       name="d3"
                       id="d3"
-                      value={`$${conversionMockData[2]}`}
+                      defaultValue={`$${conversionMockData[2]}`}
                       className="text-end bg-transparent border-none"
                     />
                   </div>
@@ -273,7 +273,7 @@ const DigitalAds = () => {
                       type="text"
                       name="d4"
                       id="d4"
-                      value={`$${conversionMockData[3]}`}
+                      defaultValue={`$${conversionMockData[3]}`}
                       className="text-end bg-transparent border-none"
                       readOnly
                     />

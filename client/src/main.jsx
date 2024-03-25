@@ -5,18 +5,14 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
 import { ErrorBoundary } from "./pages/ErrorBoundary";
 import Dashboard from "./pages/Dashboard";
-import { Auth0Provider } from "@auth0/auth0-react";
-import { domain, clientId } from "./auth_config.json";
+import Auth0ProviderWithHistory from "./auth/Auth0Provider";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ErrorBoundary fallback={<Dashboard />}>
-      <Auth0Provider
-        domain={domain}
-        clientId={clientId}
-        redirectUri={window.location.origin}>
+    <Auth0ProviderWithHistory>
+      <ErrorBoundary fallback={<Dashboard />}>
         <RouterProvider router={router} />
-      </Auth0Provider>
-    </ErrorBoundary>
+      </ErrorBoundary>
+    </Auth0ProviderWithHistory>
   </React.StrictMode>
 );

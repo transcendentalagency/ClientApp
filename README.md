@@ -55,9 +55,9 @@ The Evident is a responsive analytics application that allows Transcendental cli
 
 &nbsp;
 
-## Documentation
+<!-- ## Documentation
 
-This will be created once public.
+This will be created once public. -->
 
 &nbsp;
 

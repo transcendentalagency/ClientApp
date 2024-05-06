@@ -40,7 +40,7 @@ const Topnav = ({ handleThemeSwitch }) => {
             className="text-[2rem] text-[--d-blue-bg] m-auto dark:text-white cursor-pointer fixed left-[205px] top-4"
           />
         )}
-        <span className="text-[--d-blue-bg] dark:text-white sm:text-[1rem] md:text-[2rem] font-regular">
+        <span className="text-[--d-blue-bg] dark:text-white sm:text-[0rem] md:text-[2rem] font-regular">
           Azalea
         </span>
       </div>

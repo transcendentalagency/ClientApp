@@ -4,6 +4,7 @@
 
 .sidebar-open {
   padding-left: 14em;
+  transition: all 0.5s ease-in-out;
 }
 :root {
   --white-bg: #f7f8f3;
@@ -107,4 +108,5 @@
 
 #sidebar {
   z-index: 9999;
+  transition: all 0.3s ease-in-out;
 }

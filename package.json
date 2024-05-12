@@ -1,7 +1,7 @@
 {
-  "name": "clientapp",
+  "name": "evident",
   "version": "1.0.0",
-  "description": "The Transcendental Agency ClientApp is a responsive application that allows Transcendental clients to view analytics data from Zoho Analytics within the dashboard and make payments to TDA within the application.",
+  "description": "The Transcendental Agency Evident analytics dashboard is a responsive application that allows Transcendental clients to view analytics data from Zoho Analytics API and make payments within the application.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

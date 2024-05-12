@@ -14,11 +14,10 @@ export const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <Navigate to="client" />,
+            element: <Navigate to="client/dashboard" />,
           },
           {
             path: "client",
-
             children: [
               { index: true, element: <Client /> },
               { path: "dashboard?", element: <Dashboard /> },

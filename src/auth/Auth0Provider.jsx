@@ -8,7 +8,7 @@ const Auth0ProviderWithHistory = ({ children }) => {
       domain={process.env.domain}
       clientId={process.env.clientId}
       authorizationParams={{
-        redirect_uri: `https://evident-zeta.vercel.app//client/dashboard`,
+        redirect_uri: `https://evident-zeta.vercel.app/client/dashboard`,
       }}
     >
       {children}

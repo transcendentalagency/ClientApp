@@ -30,31 +30,31 @@ const PhoneConversions = () => {
                   data: [
                     {
                       id: 0,
-                      value: `${mockData[0]}`,
+                      value: mockData[0],
                       color: "#6ea6bb",
                       label: "Google Ads",
                     },
                     {
                       id: 1,
-                      value: `${mockData[1]}`,
+                      value: mockData[1],
                       color: "#58bcbd",
                       label: "Google Organic",
                     },
                     {
                       id: 2,
-                      value: `${mockData[2]}`,
+                      value: mockData[2],
                       color: "#4297b9",
                       label: "Direct",
                     },
                     {
                       id: 3,
-                      value: `${mockData[3]}`,
+                      value: mockData[3],
                       color: "#173861",
                       label: "Bing Organic",
                     },
                     {
                       id: 4,
-                      value: `${mockData[4]}`,
+                      value: mockData[4],
                       color: "#3076a6",
                       label: "www.AzaleaDentalBar.com",
                     },
@@ -114,26 +114,31 @@ const PhoneConversions = () => {
                   data: [
                     {
                       id: 0,
-                      value: `${mockData[0]}`,
+                      value: mockData[0],
                       color: "#6ea6bb",
                       label: "Google Ads",
                     },
                     {
                       id: 1,
-                      value: `${mockData[1]}`,
+                      value: mockData[1],
                       color: "#58bcbd",
                       label: "Google Organic",
                     },
-                    { id: 2, value: 3, color: "#4297b9", label: "Direct" },
+                    {
+                      id: 2,
+                      value: mockData[2],
+                      color: "#4297b9",
+                      label: "Direct",
+                    },
                     {
                       id: 3,
-                      value: `${mockData[2]}`,
+                      value: mockData[3],
                       color: "#173861",
                       label: "Bing Organic",
                     },
                     {
                       id: 4,
-                      value: `${mockData[4]}`,
+                      value: mockData[4],
                       color: "#3076a6",
                       label: "www.AzaleaDentalBar.com",
                     },

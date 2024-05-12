@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+auth_config.json
+.env
+/database
 
 # Editor directories and files
 .vscode/*

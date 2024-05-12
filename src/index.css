@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .sidebar-open {
   padding-left: 14em;
   transition: all 0.5s ease-in-out;
@@ -33,6 +37,7 @@
   background-color: var(--white-bg);
   scroll-behavior: smooth;
   scroll-snap-type: mandatory;
+  min-width: 350px;
 }
 .container.loading {
   filter: blur(5px);

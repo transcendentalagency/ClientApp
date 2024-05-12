@@ -2,6 +2,7 @@ import { Navigate, createBrowserRouter } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import RootLayout from "./layouts/RootLayout";
 import ErrorMessage from "./pages/ErrorMessage";
+import { Client } from "./pages/Client";
 
 export const router = createBrowserRouter([
   {
@@ -11,8 +12,18 @@ export const router = createBrowserRouter([
       {
         errorElement: <ErrorMessage />,
         children: [
-          { index: true, element: <Navigate to="/dashboard" /> },
-          { path: "dashboard", element: <Dashboard /> },
+          {
+            index: true,
+            element: <Navigate to="client" />,
+          },
+          {
+            path: "client",
+
+            children: [
+              { index: true, element: <Client /> },
+              { path: "dashboard?", element: <Dashboard /> },
+            ],
+          },
         ],
       },
     ],

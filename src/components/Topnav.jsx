@@ -28,6 +28,7 @@ const Topnav = ({ handleThemeSwitch }) => {
       className="flex flex-row gap-2 justify-between py-2 px-4 w-full bg-[--white-bg] dark:bg-[--dd-blue-bg] z-50"
     >
       <div className="flex flex-row gap-2 justify-items-start items-center md:items-start">
+
         <Sidebar isOpen={isSidebarOpen} />
         {!isSidebarOpen ? (
           <PiSidebarLight
@@ -40,6 +41,7 @@ const Topnav = ({ handleThemeSwitch }) => {
             className="text-[2rem] text-[--d-blue-bg] m-auto dark:text-white cursor-pointer fixed left-[205px] top-4 z-50"
           />
         )}
+
         <span className="text-[--d-blue-bg] dark:text-white text-[1rem] md:text-[2rem] font-regular">
           Azalea
         </span>

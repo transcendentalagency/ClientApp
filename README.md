@@ -1,5 +1,4 @@
 # Evident Analytics Application by Transcendental Agency
-
 Evident is a responsive application that allows Transcendental clients to view analytics data from Zoho Analytics API and make payments to TDA within the application.
 
 &nbsp;

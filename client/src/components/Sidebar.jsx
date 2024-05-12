@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import LOGO from "../assets/TD_Logo.png";
+import LogoutButton from "../auth/Logout.jsx";
 
 // eslint-disable-next-line react/prop-types
 const Sidebar = ({ isOpen }) => {
@@ -78,6 +79,9 @@ const Sidebar = ({ isOpen }) => {
                 </a>
               </li>
             </ul>
+          </div>
+          <div className="text-red">
+            <LogoutButton />
           </div>
         </>,
         document.getElementById("sidebar")

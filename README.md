@@ -1,6 +1,6 @@
-# Transcendental Agency Analytics Application
+# Evident Analytics Application by Transcendental Agency
 
-The Transcendental Agency ClientApp is a responsive application that allows Transcendental clients to view analytics data from Zoho Analytics within the dashboard and make payments to TDA within the application.
+Evident is a responsive application that allows Transcendental clients to view analytics data from Zoho Analytics API and make payments to TDA within the application.
 
 &nbsp;
 
@@ -28,7 +28,7 @@ The Transcendental Agency ClientApp is a responsive application that allows Tran
   - SemRush
   - CallRail
   - Velox
-  - All Connected thru Zoho Analytics
+  - All Connected thru Zoho Analytics API
 
 &nbsp;
 

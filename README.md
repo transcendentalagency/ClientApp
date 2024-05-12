@@ -55,12 +55,6 @@ Evident is a responsive application that allows Transcendental clients to view a
 
 &nbsp;
 
-## Documentation
-
-This will be created once public.
-
-&nbsp;
-
 ### Developer Support
 
 email: support@transcendentalagency.com

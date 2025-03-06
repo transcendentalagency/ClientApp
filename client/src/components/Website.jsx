@@ -1,4 +1,4 @@
-import Card from "../components/Card";
+import Card from "./Card";
 import SectionContainer from "./SectionContainer";
 import SectionTitle from "./SectionTitle";
 import LeftSection from "./LeftSection";

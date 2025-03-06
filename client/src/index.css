@@ -32,6 +32,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .container {
   background-color: var(--white-bg);
   scroll-behavior: smooth;
@@ -111,5 +112,6 @@ html {
 }
 
 #sidebar {
+  transition: all 0.3s ease-in-out;
   z-index: 9999;
 }

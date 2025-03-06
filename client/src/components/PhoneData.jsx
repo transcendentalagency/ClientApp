@@ -1,5 +1,5 @@
 import { LineChart } from "@mui/x-charts";
-import Card from "../components/Card";
+import Card from "./Card";
 import LeftSection from "./LeftSection";
 import SectionContainer from "./SectionContainer";
 import SectionTitle from "./SectionTitle";

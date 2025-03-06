@@ -1,5 +1,9 @@
 import { auth, googleProvider } from "../firebase.js";
-import { onAuthStateChanged, signInWithRedirect } from "firebase/auth";
+import {
+  onAuthStateChanged,
+  getRedirectResult,
+  signInWithPopup,
+} from "firebase/auth";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -7,33 +11,34 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    getRedirectResult(auth) // Gets auth state after redirection
+      .then((result) => {
+        if (result?.user) {
+          console.log("Redirect login success:", result.user);
+          navigate(`/client/${result.user.uid}/dashboard`);
+        }
+      })
+      .catch((error) => console.error("Login failed:", error));
+
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         navigate(`/client/${user.uid}/dashboard`);
       }
     });
+
+    return () => unsubscribe();
   }, [navigate]);
 
-  const signIn = async () => {
-    try {
-      await signInWithRedirect(auth, googleProvider);
-      navigate(`/client/${user.uid}/dashboard`);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  const signIn = () => signInWithPopup(auth, googleProvider);
 
   return (
-    <div className="flex flex-col h-screen justify-center items-center pl-0 bg-[var(--dd-blue-bg)]">
-      <div className="flex flex-col gap-4 justify-center items-center h-[400px] w-[400px] bg-[var(--white-bg)]">
-        <h1 className="text-[3rem] font-bold">Evident</h1>
-        <button
-          onClick={signIn}
-          className="bg-blue-500 text-white px-4 py-2 rounded"
-        >
-          Sign in with Google
-        </button>
-      </div>
+    <div className="flex flex-col items-center">
+      <button
+        onClick={signIn}
+        className="bg-blue-500 text-white px-4 py-2 rounded"
+      >
+        Sign in with Google
+      </button>
     </div>
   );
 };
